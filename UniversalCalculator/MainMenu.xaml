@@ -14,7 +14,7 @@
 
 		<Button Content="Maths Calculator" Margin="50,25,50,10"  Height="65" Width="386" FontSize="36"/>
         <Button Content="Mortgage Calculator"  Margin="50,25,50,10"  Height="65" Width="386" FontSize="36"/>
-			<Button Content="Currency Converter" Margin="50,25,50,10" Height="65" Width="386" FontSize="36" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto"/>
+			<Button Content="Currency Converter" Click="CurrencyConverter_Click" Margin="50,25,50,10" Height="65" Width="386" FontSize="36" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto"/>
 			<Button Content="Exit" Margin="50,25,50,10"  Height="65" Width="386" FontSize="36"/>
 		</StackPanel>
 		<StackPanel>

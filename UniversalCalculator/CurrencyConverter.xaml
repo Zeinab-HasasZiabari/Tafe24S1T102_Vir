@@ -1,0 +1,50 @@
+﻿<Page
+    x:Class="Calculator.CurrencyConverter"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Calculator"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+		<StackPanel Background="LightGray">
+			<TextBlock Text="Currency Conversion Calculator" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="37" FontWeight="Bold" Margin="50"/>
+
+			<StackPanel>
+				<StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+					<TextBlock Text="Amount $" FontSize="43" Margin="70,0" Width="200"/>
+					<TextBlock Text="From" FontSize="43" Margin="70,0" Width="200"/>
+					<TextBlock Text="To" FontSize="43" Margin="70,0" Width="200"/>
+				</StackPanel>
+				<StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+					<TextBox x:Name="amountInput" FontSize="25" Margin="25,0" Width="280"/>
+					<ComboBox x:Name="fromCurrency" FontSize="25" Margin="25,0" Width="280" SelectedIndex="0">
+						<ComboBoxItem Content="USD  -  US Dollar"/>
+						<ComboBoxItem Content="GBP  -  British Pound"/>
+						<ComboBoxItem Content="EUR  -  Euro"/>
+						<ComboBoxItem Content="INR  -  Indian Rupee"/>
+					</ComboBox>
+					<ComboBox x:Name="toCurrency" FontSize="25" Margin="25,0" Width="280" SelectedIndex="1">
+						<ComboBoxItem Content="USD  -  US Dollar"/>
+						<ComboBoxItem Content="GBP  -  British Pound"/>
+						<ComboBoxItem Content="EUR  -  Euro"/>
+						<ComboBoxItem Content="INR  -  Indian Rupee"/>
+					</ComboBox>
+				</StackPanel>
+			</StackPanel>
+			<StackPanel>
+				<TextBlock x:Name="conversionAmount" Text="Current amount of selected currency" FontSize="15" Margin="50, 5"/>
+				<TextBlock x:Name="conversionResult" Text="Converted amount of currency" FontSize="35" Margin="50, 5"/>
+				<TextBlock x:Name="conversionFoward" Text="Currencies' conversion ratio" FontSize="15" Margin="50, 5"/>
+				<TextBlock x:Name="conversionReverse" Text="Reversed currency conversion ratio" FontSize="15" Margin="50, 5"/>
+			</StackPanel>
+			<StackPanel HorizontalAlignment="Center">
+				<Button Content="Currency conversion" Click="ConvertCurrency_Click" FontSize="37"/>
+				<Button Content="Exit" Click="ExitButton_Click" FontSize="37" HorizontalAlignment="Center"/>
+			</StackPanel>
+		</StackPanel>
+		
+	</Grid>
+</Page>
