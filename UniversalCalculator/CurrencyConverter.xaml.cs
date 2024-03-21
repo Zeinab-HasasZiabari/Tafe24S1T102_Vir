@@ -70,6 +70,7 @@ namespace Calculator
 
 		private void ExitButton_Click(object sender, RoutedEventArgs e)
 		{
+			// adding Navigation
 			this.Frame.Navigate(typeof(MainMenu));
 		}
 	}
