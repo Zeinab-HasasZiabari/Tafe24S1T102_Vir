@@ -47,5 +47,11 @@ namespace Calculator
 			// Close the application
 			Application.Current.Exit();
 		}
+
+		private void TripCalculator_Click(object sender, Windows.UI.Xaml.RoutedEventArgs e)
+		{
+			/*  calculator C# code will be developed later */
+			
+		}
 	}
 }
